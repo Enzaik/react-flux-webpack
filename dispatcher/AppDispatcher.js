@@ -3,6 +3,7 @@ import {Dispatcher} from 'flux';
 let AppDispatcher = new Dispatcher();
 
 import ListStore from '../stores/ListStore';
+import UserStore from '../stores/UserStore';
 
 // Register callback with AppDispatcher
 AppDispatcher.register((payload) => {
@@ -22,6 +23,10 @@ AppDispatcher.register((payload) => {
     case 'remove-item':
       ListStore.removeItem(id);
       break;
+          
+    case 'remove-user':
+      UserStore.removeUser(id);
+      break;      
 
     default:
       return true;

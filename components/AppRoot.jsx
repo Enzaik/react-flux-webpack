@@ -2,6 +2,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import ListStore from '../stores/ListStore';
+import UserStore from '../stores/UserStore';
 import AppDispatcher from '../dispatcher/AppDispatcher';
 
 // Sub components
@@ -45,16 +46,32 @@ class AppRoot extends React.Component {
       id: id
     });
   }
+    
+      removeUser(e){
+
+    let id = e.target.dataset.id;
+    
+    AppDispatcher.dispatch({
+      action: 'remove-user',
+      id: id
+    });
+  }
 
   render(){
       
     let _this = this;
 
     let items = ListStore.getItems();
+    let users = UserStore.getUsers();
     
     let itemHtml = items.map(( listItem ) => {
       return <li key={ listItem.id }>
           { listItem.name } <button onClick={ _this.removeItem } data-id={ listItem.id }>×</button>
+        </li>;
+    });
+          let userHtml = users.map(( listUser ) => {
+      return <li key={ listUser.id }>
+          { listUser.name } <button onClick={ _this.removeUser } data-id={ listUser.id }>×</button>
         </li>;
     });
 
@@ -62,7 +79,7 @@ class AppRoot extends React.Component {
 
       <div id='bigcont'>
 <div id='real'>
-<NewItemFormtst />
+{ userHtml }
 </div>
     <div id='list'>
         <ul>
