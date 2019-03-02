@@ -11,7 +11,7 @@ let ListStore = _.extend({}, EventEmitter.prototype, {
       id: 0
     },
     { 
-      name: 'Item dos',
+      name: 'Item 2',
       id: 1
     }
   ],

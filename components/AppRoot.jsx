@@ -6,7 +6,7 @@ import AppDispatcher from '../dispatcher/AppDispatcher';
 
 // Sub components
 import NewItemForm from './NewItemForm.jsx';
-
+import NewItemFormtst from './NewItemFormtst.jsx';
 // Method to retrieve state from Stores
 let getListState = () => {
   return {
@@ -59,10 +59,16 @@ class AppRoot extends React.Component {
     });
 
     return (
-      <div>
+
+      <div id='bigcont'>
+<div id='real'>
+<NewItemFormtst />
+</div>
+    <div id='list'>
         <ul>
           { itemHtml }
         </ul>
+</div>
         <NewItemForm />
       </div>
     );
