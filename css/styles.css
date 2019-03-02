@@ -1,0 +1,45 @@
+@font-face {
+  font-family: 'Roboto_Regular';
+  src: url('fonts/Roboto-Regular.ttf')
+}
+
+@font-face {
+  font-family: 'Roboto_Thin';
+  src: url('fonts/Roboto-Thin.ttf')
+}
+
+@font-face {
+  font-family: 'Roboto_Regular';
+  src: url('fonts/Roboto-Regular.ttf')
+}
+
+
+@font-face {
+  font-family: 'Google_Sans_Regular';
+  src: url('fonts/GoogleSans-Regular.ttf')
+}
+
+@font-face {
+  font-family: 'Product_Sans_Medium';
+  src: url('fonts/GoogleSans-Medium.ttf')
+}
+
+
+h1{
+    text-align: center;
+    font-family: 'Google_Sans_Regular';
+}
+
+li{
+    font-family: 'Roboto_Regular';
+}
+
+form{
+    position: fixed;
+    bottom: 10px;
+}
+
+input{
+    padding-left: 10px;
+    outline: none;
+}
