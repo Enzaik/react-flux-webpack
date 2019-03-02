@@ -28,18 +28,40 @@
 h1{
     text-align: center;
     font-family: 'Google_Sans_Regular';
+    color: #4285F4;
 }
 
 li{
     font-family: 'Roboto_Regular';
+    padding:10px;
+    list-style: none;
+}
+
+li:hover{ 
+    cursor:pointer;    
+    box-shadow: inset 1px 0 0 #dadce0, inset -1px 0 0 #dadce0, 0 1px 2px 0 rgba(60,64,67,.3), 0 1px 3px 1px rgba(60,64,67,.15);
 }
 
 form{
     position: fixed;
     bottom: 10px;
+    right: 40%;
+    zoom: 1.4;
 }
 
 input{
-    padding-left: 10px;
+    background-color: #E7EAED;
+    border: none;
+    border-radius: 2px;
     outline: none;
+    padding-left: 8px;
+    color: #76797B
+}
+
+button{
+    font-family: 'Google_Sans_Regular';
+    border-radius: 2px;
+    background-color: #76797B;
+    border: #76797B;
+    cursor:pointer;
 }
