@@ -32,10 +32,12 @@
 
 #real{
     font-family: 'Roboto_Regular';
-    padding: 10px;
     list-style: none;
 }
 
+#real ul{
+    color:red;
+}
 
 #bigcont{
     display: flex;

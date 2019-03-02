@@ -79,10 +79,12 @@ class AppRoot extends React.Component {
 
       <div id='bigcont'>
 <div id='real'>
+ <ul id='user'>
 { userHtml }
+</ul>
 </div>
     <div id='list'>
-        <ul>
+        <ul id='message'>
           { itemHtml }
         </ul>
 </div>
